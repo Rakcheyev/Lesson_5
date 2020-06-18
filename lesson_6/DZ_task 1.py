@@ -9,6 +9,6 @@
 a = int(input("Введите начальную цифру диапазона: "))
 b = int(input("Введите конечную цифру диапазона: "))
 
-for i in range(a, b):
+for i in range(a, b + 1):
     if i % 7 == 0:
         print(i)
