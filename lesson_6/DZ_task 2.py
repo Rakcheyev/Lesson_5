@@ -20,11 +20,11 @@ elif case == 2:
     for i in range(b + 1, a, -1):
         print(i)
 elif case == 3:
-    for i in range(a, b):
+    for i in range(a, b + 1):
         if i % 7 == 0:
             print(i)
 elif case == 4:
-    for i in range(a, b):
+    for i in range(a, b + 1):
         if i % 5 == 0:
             nums_case4.append(i)
             ##print(nums_case4)
