@@ -56,4 +56,101 @@ print(ll_2)
 for i in "Hello world":
     print(i)
 
+
+word = 'apple'
+word_2 = ''
+word_3 = 'I\'m Dima'
+
+print(len(word))
+print(len(word_2))
+print(len(word_3))
+
+example = 'silly walks'
+
+for i in range(len(example)):
+    print(example[i], end=' ')
+    print(example[::-1])
+
+example = 'silly walks'
+
+print(example.count('s'))
+
+шифр цезаря
+буквы маленькие
+
+lst1 = [1,2,3]
+lst2 = ['a','b','c']
+
+whole = ['a',1,8,'b',3,'c']
+strs = list(filter(lambda x: type(x) == str, whole))
+ints = list(filter(lambda x: type(x) == int, whole))
+
+whole = sorted(strs) + sorted(ints)
+print(whole)
+
+whole.append('Hello')
+print(whole)
+
+whole.remove(2)
+print(whole)
+
+del whole[-1]
+
+
+
+whole.pop(1)
+print(whole)
+
+whole.reverse()
+print(whole)
+
+whole.insert(3, 'blah..blah')
+print(whole)
+
+lst3 = [55,89]
+whole.extend(lst3)
+print(whole)
+
+index = whole.index('c')
+print(index)
+
+whole.clear()
+print(whole)
+
+
+lst = [1,2,3,4,5]
+price = 0
+
+for i in lst:
+    price += i
+    print(price)
+
+a = 10
+b = 20
+
+a,b = b,a
+
+print(a, b)
+
+
+lst = [10,2,8,4,1]
+x = 1
+while x < len(lst):
+    for i in range(len(lst) - 1):
+        if lst[i] > lst[i+1]:
+            lst[i], lst[i+1] = lst[i+1], lst[i]
+    x +=1
+print(sorted(lst))
+        
+
+##срезы, слайсы, многомерные массивы.
+
+whole = ['a',1 ,8,'b', 3,'c']
+strs = list(filter(lambda x: type(x) == str, whole))
+ints = list(filter(lambda x: type(x) == int, whole))
+
+whole = sorted(strs) + sorted(ints)
+print(whole)
+
 '''
+
