@@ -152,5 +152,190 @@ ints = list(filter(lambda x: type(x) == int, whole))
 whole = sorted(strs) + sorted(ints)
 print(whole)
 
+
+
+list_1 = [20,30,2,5,6,22,14]
+
+to_find = 22
+found = False
+for i in range(len(list_1)):
+    found = list_1[i] == to_find
+    if found:
+        print(f"Your index is {i}")
+        break
+else:
+    print("Not found")
+
+
+
+row = [i for i in range(8) if i % 3 == 0]
+print(row)
+
+board = []
+for i in range(8):
+    row = [i for i in range(8)]
+    board.append(row)
+
+print(board)
+
+board = []
+row = []
+board = [["" for i in range(8)] for j in range(8)]
+
+board[0][1] = "Knight"
+    
+print(board)
+
+print("Hello world")
+
+print(f"Hello {6}")
+        
+
+
+
+      
+
+def foo():
+
+    for i in range(5):
+        print(i)
+
+if __name__ == "__main__":
+    i = 10
+
+    foo()
+
+    print(i)
+
+
+import sys
+
+print(sys.__dict__.keys())
+
+class Enemy:
+    def __init__(self):
+        self.hp = 100
+    def kick(self):
+        self.hp -= 10
+        def some_damage(self):
+            hp = 1000
+            print(hp)
+            self.hp -= 5
+        some_damage(self)
+
+if __name__ == "__main__":
+    e = Enemy()
+    print(e.hp)
+    e.kick()
+    print(e.hp)
+
+
+print(dir(__builtins__))
+
+'''
 '''
 
+Задание 3
+Напишите функцию, определяющую количество про-
+стых чисел в списке целых. Список передаётся в качестве 
+параметра. Полученный результат возвращается из функции.
+'''
+
+
+'''
+
+def simple(self):
+    lst = []
+    for i in range(2, self+1):
+        for j in range(2, i):
+            if i % j == 0:
+                break
+        else:
+            lst.append(i)
+          
+    print(self)
+
+simple([1,3,5,10,9])
+'''
+
+# def abs(a: int):
+#     return a ** 2
+
+# a =  -20
+# a = abs(a)
+
+# print(a)
+
+# def foo():
+#     print("Hello")
+
+# bar = foo
+
+# print(foo())
+# print(bar())
+
+
+# two = lambda : 2
+
+# print(two())
+
+# def sqrt(x: int):
+#     return x ** 2
+
+# a = sqrt(4)
+
+# print(a)
+
+# lst = [1,2,3,4,5,6]
+# lst_2 = map(lambda x: x ** 2, lst)
+
+# def helper(x):
+#     return x ** 2
+
+# print(lst)
+# lst2 = map(helper, lst)
+# print(list(lst2))
+
+
+# a = [1, 2, 3, 4, 5, 6, True, False, "Hello", "Python"]
+# # b = filter(lambda x : x % 2 == 0, a) 
+
+# # # print(list(b))
+
+# # def foo(x):
+
+# #     if type(x) == int:
+# #         if x < 3 or x == 6:
+# #             return True
+# #     if type(x) == bool:
+# #         if not x:
+# #             return True
+# #     if type(x) == str:
+# #         if "n" in x:
+# #             return True
+# #     else:
+# #         return False
+             
+
+# # b = filter(foo, a)
+
+# # print(list(b))
+
+# b = filter((lambda x : type(x) == int and (x < 3 or x == 6) or x == False or "n" in str(x)), a)
+
+# print(list(b))
+
+# def outer(par):
+#     loc = par
+    
+#     def inner():
+#         return loc
+#     return inner()
+# var = 1
+# a = outer(var)
+
+# # print(par)
+# print(a)
+    
+
+'''
