@@ -337,5 +337,178 @@ simple([1,3,5,10,9])
 # # print(par)
 # print(a)
     
-
 '''
+'''
+# Bubble sort
+
+# def bubble(lst):
+#     n = len(lst)
+
+#     for i in range(n):
+#         sorted = True
+
+#         for x in range(n - i - 1):
+#             if lst[x] > lst[x + 1]:
+#                 lst[x], lst[x + 1] = lst[x + 1], lst[x]
+#                 sorted = False
+
+#         if sorted:
+#             break
+
+#     return lst
+
+# print(bubble([2,5,3,1,6,-4,10,5]))
+
+# def bubble(nums):
+#     sorted = True
+
+#     while sorted:
+#         sorted = False
+        
+#         for i in range(len(nums) - 1):
+#             if nums[i] > nums[i + 1]:
+#                 nums[i], nums[i + 1] = nums[i + 1], nums[i]
+#                 print(f' {nums[i + 1]} > {nums[i]} swap {nums[i]} >< {nums[i + 1]}')
+#                 sorted = True
+#             else:
+#                 print(f' {nums[i]} > {nums[i + 1]} skip -->')    
+#     return nums
+
+# print(bubble([-1,2,1,-4,9,8]))
+
+
+# l = []
+
+# while True:
+#     t = input("Enter some text: ")
+#     if not t:
+#         break
+    
+#     l.append(t)
+
+# res = []
+# for element in l:
+#     for letter in set(element):
+#         if element.count(letter) == 2:
+#             res.append(element)
+
+#             break
+            
+        
+# print(res)
+
+# Selection sort
+
+# def selection_sort(nums: list):
+#     for i in range(len(nums)):
+#         lowest_index = i
+#         print(f"iteration {i}")
+#         for j in range(i + 1, len(nums)):
+#             print(f"Compare {nums[j]} < {nums[lowest_index]}")
+#             if nums[j] < nums[lowest_index]:
+#                 lowest_index = j
+#         nums[i], nums[lowest_index] = nums[lowest_index], nums[i]
+
+#         print(nums)
+#         print("*"*10)
+
+# l = [12, 8, 3, 20, 11]
+# print(l)
+# selection_sort(l)
+# print(l)
+
+
+
+# def insertion_sort(nums, left=0, right=None):
+#     if right is None:
+#         right = len(l) - 1
+
+#     for i in range(left + 1, right + 1):
+#         key_item = nums[i]
+
+#         j = i - 1
+
+#         while j >= left and nums[j] > key_item:
+
+#             nums[j + 1] = nums[j]
+#             j -= 1
+#             print(nums)
+
+#         nums[j + 1] = key_item
+#         print(nums)
+#     return nums
+
+# l = [9, 1, 15, 28, 6]
+# print(insertion_sort(l))
+
+# Insertion sort
+
+
+def insertion_sort(lst):
+
+    for i in range(1, len(lst)):
+
+        key_item = lst[i]
+
+        x = i - 1
+
+        while x >= 0 and lst[x] > key_item:
+            lst[x + 1] = lst[x]
+            x -= 1
+
+        lst[x + 1] = key_item
+
+    return lst
+
+# # Merge sort
+#     def merge(left, right):
+
+#     if len(left) == 0:
+#         return right
+
+#     if len(right) == 0:
+#         return left
+
+#     result = []
+#     index_left = index_right = 0
+
+#     while len(result) < len(left) + len(right):
+#         if left[index_left] <= right[index_right]:
+#             result.append(left[index_left])
+#             index_left += 1
+#         else:
+#             result.append(right[index_right])
+#             index_right += 1
+
+#         if index_right == len(right):
+#             result += left[index_left:]
+#             break
+
+#         if index_left == len(left):
+#             result += right[index_right:]
+#             break
+
+#     return result
+
+# # Quicksort
+
+# from random import randint
+
+# def quicksort(array):
+
+#     if len(array) < 2:
+#         return array
+
+#     low, same, high = [], [], []
+
+#     pivot = array[randint(0, len(array) - 1)]
+
+#     for item in array:
+#         if item < pivot:
+#             low.append(item)
+#         elif item == pivot:
+#             same.append(item)
+#         elif item > pivot:
+#             high.append(item)
+
+#     return quicksort(low) + same + quicksort(high)
