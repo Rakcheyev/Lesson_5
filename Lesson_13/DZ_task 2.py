@@ -68,6 +68,9 @@ def quick_sort_pos(nums, left, right):
     nums[right],nums[i] = nums[i],nums[right]
     return i
 
+
+print(quick_sort_less_iter([-1,-3,5,5,6,8,12,1,0,3,4,15,3,4,15,1,12,13]))
+
     ''' раскомментировать следующий для теста! пример не мой - w3 типа стандартный
     мне кажется где то косяк
     '''
@@ -120,4 +123,3 @@ def quick_sort_pos(nums, left, right):
 # quick_sort_usual(nums)
 # print(nums)
 
-print(quick_sort_less_iter([-1,-3,5,5,6,8,12,1,0,3,4,15,3,4,15,1,12,13]))
