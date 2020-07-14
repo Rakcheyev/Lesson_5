@@ -444,21 +444,21 @@ simple([1,3,5,10,9])
 # Insertion sort
 
 
-def insertion_sort(lst):
+# def insertion_sort(lst):
 
-    for i in range(1, len(lst)):
+#     for i in range(1, len(lst)):
 
-        key_item = lst[i]
+#         key_item = lst[i]
 
-        x = i - 1
+#         x = i - 1
 
-        while x >= 0 and lst[x] > key_item:
-            lst[x + 1] = lst[x]
-            x -= 1
+#         while x >= 0 and lst[x] > key_item:
+#             lst[x + 1] = lst[x]
+#             x -= 1
 
-        lst[x + 1] = key_item
+#         lst[x + 1] = key_item
 
-    return lst
+#     return lst
 
 # # Merge sort
 #     def merge(left, right):
