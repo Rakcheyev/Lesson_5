@@ -401,13 +401,13 @@ simple([1,3,5,10,9])
 
 # def selection_sort(nums: list):
 #     for i in range(len(nums)):
-#         lowest_index = i
+#         lowerest_index = i
 #         print(f"iteration {i}")
 #         for j in range(i + 1, len(nums)):
-#             print(f"Compare {nums[j]} < {nums[lowest_index]}")
-#             if nums[j] < nums[lowest_index]:
-#                 lowest_index = j
-#         nums[i], nums[lowest_index] = nums[lowest_index], nums[i]
+#             print(f"Compare {nums[j]} < {nums[lowerest_index]}")
+#             if nums[j] < nums[lowerest_index]:
+#                 lowerest_index = j
+#         nums[i], nums[lowerest_index] = nums[lowerest_index], nums[i]
 
 #         print(nums)
 #         print("*"*10)
@@ -494,21 +494,106 @@ simple([1,3,5,10,9])
 
 # from random import randint
 
-# def quicksort(array):
+# def quicksort(lst):
 
-#     if len(array) < 2:
-#         return array
+#     if len(lst) < 2:
+#         return lst
 
-#     low, same, high = [], [], []
+#     lower, same, higher = [], [], []
 
-#     pivot = array[randint(0, len(array) - 1)]
+#     pivot = lst[randint(0, len(lst) - 1)]
 
-#     for item in array:
+#     for item in lst:
 #         if item < pivot:
-#             low.append(item)
+#             lower.append(item)
 #         elif item == pivot:
 #             same.append(item)
 #         elif item > pivot:
-#             high.append(item)
+#             higher.append(item)
 
-#     return quicksort(low) + same + quicksort(high)
+#     return quicksort(lower) + same + quicksort(higher)
+
+# print(quicksort([1,2,5,1,9,-5,0,56,19,5,88]))
+
+# t3 = (1, 2, [1, 2, 3], False)
+
+# t3[2][1]=3
+
+# print(t3)
+
+# from random import randint
+
+# t = ()
+# lst = []
+
+# for i in range(5):
+#     lst.append(randint(0, 10))
+# t = t(lst)
+
+# print(t)
+
+# i = int(input("Enter sequence length "))
+
+
+# a = 0
+# b = 1
+# count = 0
+
+# if i <= 0:
+#    print("Please enter a positive integer")
+# elif i == 1:
+#    print(f"Fibonacci sequence upto {i} :")
+#    print(a)
+# else:
+#    print("Fibonacci sequence:")
+#    while count < i:
+#        print(a)
+#        seq = a + b
+
+#        a = b
+#        b = seq
+#        count += 1
+
+
+# def recur_fib(n):
+
+#     if n <= 1:
+#         return n
+#     else:
+#         return(recur_fib(n-1) + recur_fib(n-2))
+
+# seq = 10
+
+# if seq <= 0:
+#     print("Plese enter a positive integer")
+# else:
+#     print("Fibonacci sequence:")
+#     for i in range(seq):
+#         print(recur_fib(i))
+
+
+# num = int(input("Enter a number: "))
+ 
+# fact = 1
+# i = 1
+ 
+# while i <= num:
+# 	fact = fact * i
+# 	i = i + 1
+ 
+# print("facttorial of ", num, " is ", fact)
+
+
+# def fact(n):
+#     if n == 1:
+#         return n
+#     else:
+#         return n * fact(n-1)
+
+# print(fact(5))
+
+
+
+
+
+
