@@ -8,8 +8,6 @@ def equal_nums(t1, t2, t3):
     for i in t1:
         if i in t2 and i in t3:
             lst.append(i)
-        else:
-            continue
     print(lst)
 
 t1 = (1,5,3,4,2,12)

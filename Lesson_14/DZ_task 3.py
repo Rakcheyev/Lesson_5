@@ -10,11 +10,12 @@ def equal_in_place(t1, t2, t3):
     
     for i in range(min_len):
         if t1[i] == t2[i] == t3[i]:
+            # print(f"index {i} - num {t1[i]}")
             result.append(t1[i])
     print(result)
 
-t1 = (1,3,4,2,12,8,10)
+t1 = (1,3,4,2,12,8,10,1)
 t2 = (2,3,15,12,0,8,22)
-t3 = (6,3,8,9,12,8,22)
+t3 = (6,3,8,9,12,8,22,8,10)
 
 equal_in_place(t1, t2, t3)

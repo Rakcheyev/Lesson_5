@@ -591,9 +591,38 @@ simple([1,3,5,10,9])
 #         return n * fact(n-1)
 
 # print(fact(5))
+'''
+t1 = (1, 4, 8, 3, 0, 11)
+t2 = (1, 6, 7, 3, 3)
+t3 = (1, 4, 2, 3)
 
 
 
+# The same tuples for all tasks
+t1 = (1, 4, 8, 3,5,8)
+t2 = (1, 6, 7, 3,4,8)
+t3 = (1, 4, 2, 3,5,8)
+print(f"Tuple 1: {t1}\nTuple 2: {t2}\nTuple 3: {t3}")
+def same_index(t1, t2, t3):
+    """Returns the same index of numbers with the same number"""
+    for index, num in enumerate(t1):
+        if t1[index] == t2[index] == t3[index]:
+            print(f"The index of number ({num}) is {index}")
+print("\nTask 3:")
+same_index(t1, t2, t3)
 
+'''
 
+# The same tuples for all tasks
+t1 = (1, 4, 8, 3)
+t2 = (1, 6, 7, 3)
+t3 = (1, 4, 2, 3)
+print(f"Tuple 1: {t1}\nTuple 2: {t2}\nTuple 3: {t3}")
+def same_index(t1, t2, t3):
+    """Returns the same index of numbers with the same number"""
+    for n, index in enumerate(t1, 0):
 
+        print(n, index)
+
+print("\nTask 3:")
+same_index(t1, t2, t3)
